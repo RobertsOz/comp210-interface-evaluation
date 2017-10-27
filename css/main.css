@@ -60,7 +60,13 @@ body, html{
   width:100%;
   height:100%;
   margin:0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+html{
+  background-image:url(../images/BlackHoleBG.png);
+  background-color:#8b8b8a;
+  background-size:1616px;
+  background-repeat: no-repeat;
 }
 h1{
   font-size: 2em;
@@ -74,63 +80,104 @@ h2{
 
 .main-container{
   width:960px;
-  background:#eee;
-  margin: 30px auto;
+  margin: 0px 0px 0px 360px;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
   padding-bottom:80px;
 }
 header{
   width:100%;
-  height:100px;
-  background: #aaa;
+  height:400px;
+}
+header h1,header h2{
+	color: #89ff1c;
+	font-weight:normal;
+	}
+header h1{
+	font-size:40px;
+}
+header h2{
+	font-size:20px;
+}
+.thisisbadpractice{
+	padding-left: 424px;
+    padding-top: 177px;
 }
 .content{
   width:100%;
   min-height:400px;
 }
 aside{
-  width:30%;
-  min-height: 300px;
-  float:left;
-  background:#777;
+	width:300px;
+	height:557px;
+  position:fixed;
+  top:200px;
+  background-image:url(../images/Menu.png);
+  background-size:300px;
+  background-repeat:no-repeat;
+}
+nav{
+	margin-top:120px;
+	margin-left:80px;
+	width:231px;
 }
 nav ul{
   margin:10px;
 }
-nav ul li{
-  margin:5px;
-}
 nav ul li a{
+	padding-right:10px;
   display:block;
   width: 90%;
-  height:60px;
-  background-color: #222;
-  color: #fff;
-  line-height: 60px;
-  text-align: center;
+  height:50px;
+  color: #89ff1c;
+  font-size:20px;
+  font-weight:bold;
+  line-height: 50px;
+  text-align: right;
   text-decoration: none;
 }
-nav ul li a.selected{
-  text-decoration: underline;
-  background: #888;
+nav ul li a.active{
+  background: #89ff1c;
+  color:#FFF;
 }
 nav ul li a:hover{
-  background: #888;
+  background: #89ff1c;
+  color:#FFF;
+}
+.sectionTitle{
+	text-align:center;
+	color:#89ff1c;
+	text-shadow: 2px 2px 1px rgba(127, 127, 127, 1);
+}
+.sectionSubTitle{
+	color:#89ff1c;
+	text-shadow: 2px 2px 1px rgba(127, 127, 127, 1);
+	padding:0px 20px;
+}
+.sectionBreakImage{
+	margin:10px auto;
+	display:block;
+}
+.sectionParagraph{
+	padding:25px;
+}
+h3{
+	padding-left:25px;
+	font-weight:bold;
 }
 section{
-  width:65%;
+	width:99%;
   min-height:300px;
-  background: #555;
-  float: right;
-  margin:10px;
+  background: #fefefe;
+  border-style:solid;
+    border-width: 2px;
+	border-color: black;
+  margin-bottom:10px;
+      padding: 3px;
 }
 footer{
-  clear: both;
-  width:100%;
+  width:99%;
   height:40px;
-  background: #bbb;
-  position: absolute;
   bottom: 0px;
   padding:5px;
 }
